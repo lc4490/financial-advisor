@@ -300,7 +300,7 @@ if st.session_state.first_run:
 
     # Process them
     status.markdown("🔄 **Processing tickers...**")
-    parallel_process_stocks(tickers_to_process, max_workers=10)
+    # parallel_process_stocks(tickers_to_process, max_workers=10)
 
     status.markdown("✅ **Done! Ready to chat!**")
     st.session_state.first_run = False
